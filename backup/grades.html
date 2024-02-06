@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="grades.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.13/jspdf.plugin.autotable.min.js"></script>
+    <title>Grades</title>
+  </head>
+  <body>
+  
+      <header>
+          <img src="images/logo.png" alt="">
+          <a href="studenthome.html">STUDENT PORTAL</a>
+          <div class="logout">
+            <a href="index.html">
+              <span class="ttr-icon"><i class="fa fa-sign-out"></i></span>
+            </a>
+  
+            </div>
+      </header>
+  
+      <main>
+          <aside>
+              <ul>
+                  <li><a href="dashboard.html"class="ttr-material-button">
+                      <span class="ttr-icon"><i class="fa fa-home"></i></span>
+                      <span class="ttr-label">Dashboard</span></a>
+                  </li>
+                  <li><a href="profile.html"class="ttr-material-button">
+                      <span class="ttr-icon"><i class="fa fa-user-circle"></i></span>
+                      <span class="ttr-label">Profile</span></a>
+                  </li>
+                  <li>
+                      <a href="enrolledsub.html" class="ttr-material-button">
+                        <span class="ttr-icon"><i class="fa fa-book"></i></span>
+                          <span class="ttr-label">Enrolled Subjects</span></a>
+                    </li>
+                    <li>
+                      <a href="grades.html" class="ttr-material-button">
+                        <span class="ttr-icon"><i class="fa fa-trophy"></i></span>
+                          <span class="ttr-label">Grades</span></a>
+                    </li>
+                    <li>
+                      <a href="" class="ttr-material-button">
+                        <span class="ttr-icon"><i class="fa fa-bars"></i></span>
+                          <span class="ttr-label">Curriculum Checklist</span></a>
+                    </li>
+                    <li>
+                      <a href="" class="ttr-material-button">
+                        <span class="ttr-icon"><i class="fa fa-sticky-note-o"></i></span>
+                          <span class="ttr-label">Enrollment</span></a>
+                    <li>
+                      <a href="settings.html" class="ttr-material-button">
+                        <span class="ttr-icon"><i class="fa fa-gear"></i></span>
+                          <span class="ttr-label">Settings</span></a>
+                    </li>
+          
+                  </ul>
+          </aside>
+  
+          <section>
+              <div class="container-fluid">
+                  <div>
+                    <h4>
+                      <span><i class="fa fa-trophy"></i>
+                      Grades
+                    </h4>
+                    <hr>
+                    </div>
+                    
+                    <div class="dropdown-container">
+                      <!-- School Year Dropdown -->
+                      <div class="dropdown">
+                          <label for="schoolYear">School Year:</label>
+                          <select id="schoolYear">
+                              <option value="2022-2023">2022-2023</option>
+                              <option value="2023-2024">2023-2024</option>
+                              <!-- Add more options as needed -->
+                          </select>
+                      </div>
+              
+                      <!-- Search Button -->
+                      <button class="search-button" onclick="search()">Search</button>
+                  </div>
+                  <script>
+                    function search() {
+                        // Retrieve the selected school year
+                        var selectedYear = document.getElementById("schoolYear").value;
+                
+                        // Perform search or other actions based on the selected school year
+                        alert("Searching for school year: " + selectedYear);
+                    }
+                </script>
+<div>
+  <button class="collapsible" onclick="toggleContent('semester1')">1st Semester</button>
+  <div class="content" id="semester1">
+      <table>
+          <thead>
+              <tr>
+                  <th>Teacher</th>
+                  <th>Subject</th>
+                  <th>Grades</th>
+                  <th>Average</th>
+                  <th>Remarks</th>
+              </tr>
+          </thead>
+          <tbody>
+              <!-- Add your table data for 1st Semester here -->
+              <tr>
+                  <td>Teacher 1</td>
+                  <td>Subject 1</td>
+                  <td>85</td>
+                  <td>90</td>
+                  <td>Passed</td>
+              </tr>
+              <tr>
+                  <td>Teacher 2</td>
+                  <td>Subject 2</td>
+                  <td>92</td>
+                  <td>89</td>
+                  <td>Passed</td>
+              </tr>
+            </tbody>
+      </table>
+      <button onclick="generatePDF('semester1')">Generate PDF for 1st Semester</button>
+  </div>
+
+  <button class="collapsible" onclick="toggleContent('semester2')">2nd Semester</button>
+  <div class="content" id="semester2">
+      <table>
+          <thead>
+              <tr>
+                  <th>Teacher</th>
+                  <th>Subject</th>
+                  <th>Grades</th>
+                  <th>Average</th>
+                  <th>Remarks</th>
+              </tr>
+          </thead>
+          <tbody>
+              <!-- Add your table data for 2nd Semester here -->
+              <tr>
+                  <td>Teacher A</td>
+                  <td>Subject A</td>
+                  <td></td>
+                  <td>78</td>
+                  <td>Passed</td>
+              </tr>
+              <tr>
+                  <td>Teacher B</td>
+                  <td>Subject B</td>
+                  <td>88</td>
+                  <td>90</td>
+                  <td>Passed</td>
+              </tr>
+          </tbody>
+      </table>
+      <button onclick="generatePDF('semester1')">Generate PDF for 2nd Semester</button>
+  </div>
+  <script>
+    function toggleContent(semester) {
+        var content = document.getElementById(semester);
+
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    }
+
+    function generatePDF(semester) {
+        var pdf = new jsPDF();
+
+        // Iterate over each table and add it to the PDF
+        [semester].forEach(function (semester) {
+            var content = document.getElementById(semester);
+
+            // Only add the content if it is visible
+            if (content.style.display === "block") {
+                pdf.text(20, 10, semester); // Add the semester label
+                pdf.autoTable({ html: '#' + semester + ' table' }); // Add the table content using autoTable
+                pdf.addPage(); // Add a new page for the next semester
+            }
+        });
+
+        // Save or open the PDF
+        pdf.save(semester + '_grades.pdf');
+    }
+    </script>
+
+          </section>
+      </main>
+  </body>
+  </html>

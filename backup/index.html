@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <section class="module">
+        <div class="module__wrapper">
+            <div class="module__wrapper__seal">
+                <div class="module__wrapper__seal__fixed">
+                    <img src="images/logo.png" alt="">
+                </div>
+            </div>
+            <div class="module__wrapper__form">
+                <div class="module__wrapper__form__header">
+                    <div class="module__wrapper__form__header__border">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="module__wrapper__form__content">
+                    <div class="module__wrapper__form__content__title">
+                        <h1><span>Hi,</span> Yengkonians!</h1>
+                    </div>
+                    <form action="#" class="module__wrapper__form__content__login">
+                        <div class="module__wrapper__form__content__login__field-select">
+                            
+                            <select name="module" id="module">
+                                <option value="">Admin</option>
+                                <option value="">Faculty</option>
+                                <option value="">Student</option>
+                            </select>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="module__wrapper__form__content__login__field-input js-username">
+                            <input type="text" name="username" required>
+                            <label for="username">Username</label>
+                        </div>
+                        <div class="module__wrapper__form__content__login__field-input js-password">
+                            <input type="password" name="password" required>
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="module__wrapper__form__content__login__forgot-pass">
+                            <a href="forgotpass.html">Forgot password?</a>
+                        </div>
+
+                        <div class="module__wrapper__form__content__login__field-btn">
+                            <button>Login</button>
+                        </div>
+                        <div class="module__wrapper__form__content__register">
+                            <p>Don't have an account? <a href="register.html">Register here</a> 
+                            </p>
+                        </div>                             
+                        <div class="module__wrapper__form__content__login__copyright">
+                            <p>Copyright 2023 &copy GENERAL FLAVIANO YENGKO SENIOR HIGH SCHOOL</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

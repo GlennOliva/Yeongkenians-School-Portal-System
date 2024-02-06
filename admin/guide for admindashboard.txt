@@ -1,0 +1,13 @@
+Admindashboard.php okay naman  na po yan 
+
+Profile.php yan po yung admin profile page ng admin na kung saan nakapaloob po dyan ang ilang mga infos like full name,gender,address,contact information at saka password po nya sa paglogin sa student portal as admin saka kung pwede ay pwede po maedit yung profile pic ni admin at pati ang mga infos nya
+
+Students.php yan po ay yung pag may iiadd si admin na students tas lalabas po sya dyan sa table saka malalaman din kung enrolled o not enrolled si student tapos kung ano po pwede po palagay ng search bar at filter saka nakaarrange po sana by strands po
+
+Faculty.php yan po ay same lang din po sya sa students.php na kung saan pag may iaadd si admin na teacher ay lalabas din po sya dyan sa table then malalaman din kung ano ang mga sections at grade ang hawak po nila at pwede po sana sya magassign classes 
+
+Student records.php dito naman makikita yung mga student records ng mga students na nakaarrange by strands kumbaga para syang enrollment form pero yubg mga details o info ng student ay dapat manggaling sa enrollment module na kay student dashboard tapos pag sinearch ay lalabas po ang name ni student then yung pwede sana idownload o iprint ang student records ni student
+
+Addition po sana ng strands.php na kung saan dito po nakalista ang lahat ng enrolled students sa bawat strands like STEM,ABM,HUMSS,TVL-CSS,TVL -COOKERY 
+
+Manage users.php ito ang settings ni admin na kung saan imamanage nya ang mga user accounts ng mga students,teachers at kasama ang admin at kung pwede sya magchange password

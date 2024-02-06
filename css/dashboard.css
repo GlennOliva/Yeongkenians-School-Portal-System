@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color:#10078c; /* Blue background color */
+    color: white;
+    padding-left: 30px;
+    text-align: left;
+    line-height: 70px;
+}
+
+img{
+    float: left;
+    width: 70px;
+    height: 65px; 
+}
+.logout{
+float: right;
+padding-right: 30px ;
+}
+
+a{
+text-decoration: none! important;
+padding-left: 10px;
+font-weight: bold;
+
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    background-color:  hsl(248, 96%, 19%); /* Sidebar background color */
+    color: white;
+    width: 16%;
+    height: 670px;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-top: 2%;
+    padding-bottom: 30px;
+    
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+  
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   
+
+}
+
+li {
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #ecf0f1; /* Change color on hover */
+}
+
+.container-fluid {
+    width: 100%;
+    padding-left: 0px;
+    display: block;
+    box-sizing: border-box;
+}
+
+h4 {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #111111;
+    font-family: rubik;
+    margin-top: 0;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-sm-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.widget-bg1 {
+    background: rgb(53,42,239);
+    background: linear-gradient(342deg, rgba(53,42,239,1) 0%, rgba(25,25,221,1) 1%, rgba(0,212,255,1) 100%);
+
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+.widget-card {
+    border-radius: 4px;
+    padding: 20px 20px 15px 20px;
+    color: #fff;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.widget-card .wc-title {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+    color: #fff;
+    font-weight: 500;
+}
+
+.wc-des {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.wc-stats {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.widget-bg2 {
+    background: rgb(105,38,213);
+    background: linear-gradient(342deg, rgba(105,38,213,1) 0%, rgba(167,191,253,1) 1%, rgba(60,47,190,1) 100%);
+}
+
+.widget-bg3 {
+    background: rgb(48,41,16);
+    background: linear-gradient(342deg, rgba(48,41,16,1) 0%, rgba(235,123,80,1) 1%, rgba(243,198,50,1) 100%);
+}
+
+.widget-bg4 {
+    background: rgb(167,229,123);
+    background: linear-gradient(342deg, rgba(167,229,123,1) 0%, rgba(29,141,16,1) 1%, rgba(27,144,212,1) 100%);
+}
+

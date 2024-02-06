@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color:#10078c; /* Blue background color */
+    color: white;
+    padding-left: 30px;
+    text-align: left;
+    line-height: 70px;
+}
+
+img{
+    float: left;
+    width: 70px;
+    height: 65px; 
+}
+.logout{
+float: right;
+padding-right: 30px ;
+}
+
+a{
+text-decoration: none! important;
+padding-left: 10px;
+font-weight: bold;
+
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    background-color:  hsl(248, 96%, 19%); /* Sidebar background color */
+    color: rgb(22, 21, 21);
+    width: 16%;
+    height: 670px;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-top: 2%;
+    padding-bottom: 30px;
+    
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+  
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   
+
+}
+
+li {
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+a:hover {
+    color:  #ecf0f1;; /* Change color on hover */
+}
+
+.container-fluid {
+width: 100%;
+padding-left: 0px;
+display: block;
+box-sizing: border-box;
+
+}
+
+h4 {
+font-size: 22px;
+line-height: 28px;
+margin-bottom: 15px;
+font-weight: 500;
+color: #111111;
+font-family: rubik;
+margin-top: 0;
+margin-top: 0;
+margin-bottom: .5rem;
+display: block;
+margin-block-start: 1.33em;
+margin-block-end: 1.33em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+box-sizing: border-box;
+}
+
+.dropdown-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.dropdown {
+    margin-right: 10px;
+}
+
+.search-button {
+    background-color: #3498db;
+    color: white;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.collapsible {
+    cursor: pointer;
+    padding: 15px;
+    background-color:white;
+    color: rgb(22, 20, 20);
+    border: none;
+    text-align: left;
+    font-weight: bold;
+    font-size: medium;
+    outline: none;
+    width: 100%;
+    margin-top: 5px; /* Add margin to separate collapsible sections */
+    border: 1px solid #d4cccc; /* Add border to create a visual separation */
+    border-radius: 3px; /* Optional: Add rounded corners */
+
+}
+
+.content {
+    display: none;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #5d5e60;
+    color: white;
+}
